@@ -1,0 +1,10 @@
+export default {
+  source: ["src/**/*.json"],
+  platforms: {
+    css: {
+      transformGroup: "css",
+      buildPath: "dist/css/",
+      files: [{ destination: "tokens.css", format: "css/variables" }],
+    },
+  },
+};

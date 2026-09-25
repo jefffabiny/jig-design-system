@@ -1,0 +1,9 @@
+{
+  "color": {
+    "$type": "color",
+    "neutral": {
+      "900": { "$value": "#1a1a1a" },
+      "0": { "$value": "#ffffff" }
+    }
+  }
+}
