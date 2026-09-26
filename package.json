@@ -4,7 +4,8 @@
   "private": true,
   "description": "Jig design system workspace",
   "scripts": {
-    "build": "pnpm -r --if-present build"
+    "build": "pnpm -r --if-present build",
+    "audit:baseline": "node audit/scripts/run-baseline.mjs"
   },
   "license": "ISC",
   "devEngines": {
@@ -14,5 +15,9 @@
       "onFail": "download"
     }
   },
-  "type": "module"
+  "type": "module",
+  "devDependencies": {
+    "@axe-core/playwright": "^4.13.0",
+    "playwright": "^1.63.0"
+  }
 }
