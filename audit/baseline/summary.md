@@ -41,16 +41,16 @@ Issues sorted by how many pages they appear on. These point to shared templates 
 
 ## Lighthouse scores (fill in by hand)
 
-Run Chrome DevTools > Lighthouse > Accessibility on each page.
+Run Chrome DevTools > Lighthouse on each page and record Performance, Accessibility, Best Practices, and SEO.
 
-| Page | Score |
-|---|---|
-| home | |
-| facilities | |
-| reservations | |
-| faq | |
-| become-a-member | |
-| mission-vision | |
-| leadership | |
-| contacting-us | |
-| support-us | |
+| Page | Performance | Accessibility | Best Practices | SEO |
+|---|---|---|---|---|
+| home | 93 | 96 | 100 | 92 |
+| facilities | 80 | 96 | 100 | 92 |
+| reservations | 97 | 88 | 100 | 92 |
+| faq | 99 | 96 | 100 | 92 |
+| become-a-member | 99 | 97 | 100 | 92 |
+| mission-vision | 100 | 96 | 100 | 92 |
+| leadership | 99 | 96 | 100 | 92 |
+| contacting-us | 100 | 96 | 100 | 92 |
+| support-us | 99 | 96 | 100 | 92 |

@@ -171,7 +171,7 @@ async function writeReports() {
     .sort((a, b) => b[1].pages.size - a[1].pages.size)
     .map(([, r]) => `| ${r.issue} | ${r.sc} | ${r.sev} | ${r.pages.size} of ${PAGES.length} |`)
     .join('\n');
-  md += `\n\n## Lighthouse scores (fill in by hand)\n\nRun Chrome DevTools > Lighthouse > Accessibility on each page.\n\n| Page | Score |\n|---|---|\n${PAGES.map((p) => `| ${p.slug} | |`).join('\n')}\n`;
+  md += `\n\n## Lighthouse scores (fill in by hand)\n\nRun Chrome DevTools > Lighthouse on each page and record Performance, Accessibility, Best Practices, and SEO.\n\n| Page | Performance | Accessibility | Best Practices | SEO |\n|---|---|---|---|---|\n${PAGES.map((p) => `| ${p.slug} | | | | |`).join('\n')}\n`;
   await fs.writeFile(path.join(OUT, 'summary.md'), md);
 
   const top = (obj, k = 12) => Object.entries(obj).sort((a, b) => b[1] - a[1]).slice(0, k);
